@@ -10,10 +10,10 @@ class Entity {
         this.moving = false;
         this.speed = 0;
         this.canBlock = false;
-        this.mapId = 0;
+        this.map_id = 0;
     }
 
-    moveTo(x, y) {
+    moveTo(x, y, map_id) {
         if (x >= 0 && x < 10 && y >= 0 && y < 10 && map[y][x] == 0) {
             map[p.y][p.x] = 0;
             map[y][x] = id;
