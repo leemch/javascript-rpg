@@ -1,4 +1,4 @@
-import Tile from "./Tile";
+var Tile = require("./Tile");
 
 
 class Map {
@@ -12,7 +12,7 @@ class Map {
                 this.tiles[x][y] = new Tile();
             }
         }
-        console.log(this.tiles);
+        //console.log(this.tiles);
     }
 
 
@@ -22,6 +22,10 @@ class Map {
         }
 
         return null;
+    }
+
+    moveObject(obj) {
+        
     }
 }
 

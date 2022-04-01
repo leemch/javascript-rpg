@@ -11,6 +11,7 @@ const socketio = require("./networking/socketio.js").init(http_server);
 //classes
 const Player = require("./classes/Player.js");
 const playerController = require("./player/pControlObject.js").getPlayerController();
+const mapController = require("./maps/mapControlObject.js").getMapController();
 //const playerController = require("./player/pControlObject.js").getPlayerController();
 
 var map = require("./maps/map.js");
