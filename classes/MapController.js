@@ -16,7 +16,7 @@ class MapController {
     addMap(name) {
         this.maps[this.count] = new Map(name, 10, 10);
         this.count++;
-        console.log(this.maps);
+        //console.log(this.maps);
     }
 
     getMap(id) {

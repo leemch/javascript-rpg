@@ -26,7 +26,6 @@ module.exports = (socketio, socket, player) => {
     socket.on("move", (direction) => {
         switch (direction) {
             case "up":
-                console.log(direction);
                 p.movePlayer(socket, p.x, p.y - 1, direction);
                 break;
 

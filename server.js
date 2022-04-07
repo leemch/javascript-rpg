@@ -10,9 +10,14 @@ const socketio = require("./networking/socketio.js").init(http_server);
 
 //classes
 const Player = require("./classes/Player.js");
-const playerController = require("./player/pControlObject.js").getPlayerController();
-const mapController = require("./maps/mapControlObject.js").getMapController();
+
+
+
+//Controller objects
 //const playerController = require("./player/pControlObject.js").getPlayerController();
+const mapController = require("./maps/mapControlObject.js").getMapController();
+mapController.addMap("map1", 10, 10);
+const playerController = require("./player/pControlObject.js").getPlayerController();
 
 var map = require("./maps/map.js");
 
